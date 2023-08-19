@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome for Icons-->
+    <script src="https://kit.fontawesome.com/1fad72bd00.js" crossorigin="anonymous"></script>
+    <!--Google Fonts to upload Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>TechAssassin WebStore</title>
+
+    <style>
+          #title {
+            background-color: #242F9B;
+            color: white;
+          }
+          
+          body {
+            font-family: "Montserrat";
+          }
+          
+          .container-fluid {
+            padding: 3% 15%;
+          }
+          
+          body {
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+          }
+          
+          h1 {
+            font-family: "Montserrat";
+            font-weight: 900;
+            font-size: 3.5rem;
+            line-height: 1.5;
+          }
+          
+          h2 {
+            font-family: "Montserrat-Bold";
+            font-size: 3rem;
+            line-height: 1.5;
+          }
+          
+          h3 {
+            font-family: "Montserrat";
+            font-weight: 700;
+            font-size: 1.5rem;
+          }
+          
+          p {
+            color: #8f8f8f;
+          }
+          /* Navigation Bar */
+          
+          .navbar {padding: 0 0 4.5rem}
+          
+          .navbar-brand {
+            font-family: "Ubuntu";
+            font-size: 2.5rem;
+            font-weight: bold;
+          }
+          
+          .nav-item {padding: 0 18px;}
+          
+          .nav-link {
+            font-size: 1.2rem;}
+          
+          /* Download Buttons  */
+          
+          .download-button {
+            margin: 5% 3% 5% 0;
+          }
+          
+          /* Title Image */
+          
+          .title-image {
+          width: 80%;
+          transform: rotate(25deg);
+        }
+        
+        #features {
+          background-color: blueviolet;
+            padding: 7% 15%;
+          }
+          .feature-box {
+            text-align: center;
+            padding: 5%;
+          }
+          
+          .icon {color: #31E1F7;
+          margin-bottom: 1rem;}
+          
+          .icon:hover {
+            color: crimson;}
+          
+          .feature {
+          font-family: "Montserrat";
+          font-weight: 700;
+          font-size: 1.5rem;}
+          
+          .ftext {
+            color: whitesmoke;
+          }
+
+        #products {
+          background-color: lightskyblue;
+          padding: 7% 15%;
+        }
+
+          .card {
+            height: 450px;
+          }
+
+
+          .product-image {
+            margin: 10px;
+            margin-bottom: 1rem;
+            max-height: 50%;
+            }
+          
+          .product-image:hover {
+            filter: brightness(50%);
+          }
+
+          #footer {
+            background-color: white;
+          }
+
+          .footer-con {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative; /* Add relative positioning to the container */
+          }
+      
+          /* Custom style for the logo */
+          .footer-image {
+            max-width: 80px; /* Set the maximum width for the logo */
+            position: absolute; /* Position the logo absolutely */
+            top: 10px; /* Position the logo 10px from the top */
+            left: 10px; /* Position the logo 10px from the left */
+          }
+      
+          /* Custom style for the form fields */
+          .form-control {
+            border-radius: 0; /* Remove rounded corners */
+          }
+      
+          /* Custom style for the submit button */
+          .btn-primary {
+            border-radius: 0; /* Remove rounded corners */
+          }
+    </style>
+</head>
+<body>
+    <section id="title">
+
+        <div class="container-fluid">
+    
+          <!-- I Created A Nav Bar For Better Aesthetics -->
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="">TechAssassin</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="">Contact Details</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Download</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    
+          <!-- Title Section -->
+    
+          <div class="row">
+            <div class="col-lg-6">
+              <h1>TechAssassin. The Only Place For Your Tech Army.</h1>
+              <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple fa-beat" style="--fa-animation-duration: 2s;"></i> Download</button>
+              <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-google-play fa-beat" style="--fa-animation-duration: 2s;"></i> Download</button>
+            </div>
+    
+            <div class="col-lg-6">
+              <img class="title-image" src="images/robot blueprint.png" alt="robo art">
+            </div>
+    
+          </div>
+        </div>
+      </section>
+    
+    <section id="features">
+
+        <div class="row">
+          <div class="feature-box col-lg-4">
+            <i class="icon fa-solid fa-person-military-rifle fa-fade fa-4x"></i>
+            <h3 class="feature">No Human Errors.</h3>
+            <p class="ftext">Our Robots: Obey, Enforce & Go All In.</p>
+          </div>
+    
+          <div class="feature-box col-lg-4">
+            <i class="icon fa-solid fa-mobile fa-beat fa-4x"></i>
+            <h3 class="feature">Ease Of Command</h3>
+            <p class="ftext">Simply use the app, assign the bot and choose orders precisely</p>
+          </div>
+    
+          <div class="feature-box col-lg-4">
+            <i class="icon fa-solid fa-bomb fa-bounce fa-4x"></i>
+            <h3 class="feature">Ka-BOOOM!</h3>
+            <p class="ftext">Your Problem is eliminated without a trace.</p>
+          </div>
+        </div>
+    </section>
+
+    <!--Product Section-->
+
+    <section id="products">
+    <div class="container">
+      <h1 class="mt-4 mb-3">WARNING: AT YOUR OWN RISK</h1>
+      <!--Created 3 items per row (added 2 exra so it looked better)-->
+      <div class="row">
+  
+        <!-- Product 1 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <!--image in own div, set height (google boostrap) set it auto?-->
+            <img class="product-image" src="images/war drone.png" alt="robo drone">
+            <div class="card-body">
+              <h5 class="card-title">War Drone 9000</h5>
+              <p class="card-text">R8 000 000</p>
+              <button type="button" class="btn btn-warning">Purchase</button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Product 2 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="product-image" src="images/robo scout.png" alt="robo scout">
+            <div class="card-body">
+              <h5 class="card-title">Robo Scout 17</h5>
+              <p class="card-text">R90 000</p>
+              <button type="button" class="btn btn-warning">Purchase</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Product 3 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="product-image" src="images/robo crafter.png" alt="robo crafter">
+            <div class="card-body">
+              <h5 class="card-title">Robo Crafter</h5>
+              <p class="card-text">R120 000</p>
+              <button type="button" class="btn btn-warning">Purchase</button>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+
+      <div class="row">
+        
+        <!-- Product 4 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="product-image" src="images/robot blueprint.png" alt="robo design">
+            <div class="card-body">
+              <h5 class="card-title">Custom Design</h5>
+              <p class="card-text">P.O.A</p>
+              <button type="button" class="btn btn-warning">Purchase</button>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Product 5 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="product-image" src="images/robospider.jpg" alt="robo spider">
+            <div class="card-body">
+              <h5 class="card-title">Robo Spider</h5>
+              <p class="card-text">R54 000</p>
+              <button type="button" class="btn btn-warning">Purchase</button>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Product 6 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="product-image" src="images/robokabluey.jpg" alt="robo kabluey">
+            <div class="card-body">
+              <h5 class="card-title">Robo Emergency Stopper</h5>
+              <p class="card-text">R12 000</p>
+              <button type="button" class="btn btn-warning">Purchase</button>
+            </div>
+          </div>
+        </div>      
+      </div>
+
+      <div class="row">
+        
+        <!-- Product 7 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="product-image" src="images/robopanic.jpg" alt="robo panic">
+            <div class="card-body">
+              <h5 class="card-title">Robot Stress Tranquilizer</h5>
+              <p class="card-text">R800</p>
+              <button type="button" class="btn btn-warning">Purchase</button>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Product 8 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="product-image" src="images/robodecimate.jpg" alt="robo decimate">
+            <div class="card-body">
+              <h5 class="card-title">Robo Decimater</h5>
+              <p class="card-text">R3 000</p>
+              <button type="button" class="btn btn-warning">Purchase</button>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Product 9 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="product-image" src="images/robonuke.jpg" alt="robo kabluey">
+            <div class="card-body">
+              <h5 class="card-title">Robo Nuke</h5>
+              <p class="card-text">R800 000</p>
+              <button type="button" class="btn btn-warning">Purchase</button>
+            </div>
+          </div>
+        </div>      
+      </div>
+
+      <div class="row">
+        
+        <!-- Product 10 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="product-image" src="images/robomedic.jpg" alt="robo medic">
+            <div class="card-body">
+              <h5 class="card-title">Xtreme Medic Kit</h5>
+              <p class="card-text">R3 000</p>
+              <button type="button" class="btn btn-warning">Purchase</button>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Product 11 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="product-image" src="images/robo calm.jpg" alt="robo calm">
+            <div class="card-body">
+              <h5 class="card-title">Robo Chill-Pill</h5>
+              <p class="card-text">R900</p>
+              <button type="button" class="btn btn-warning">Purchase</button>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Product 12 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="product-image" src="images/robowatch.gif" alt="robo watch">
+            <div class="card-body">
+              <h5 class="card-title">Robo Watch Interface</h5>
+              <p class="card-text">R5 400</p>
+              <button type="button" class="btn btn-warning">Purchase</button>
+            </div>
+          </div>
+        </div>      
+      </div>
+  </section>
+
+  <!--Footer Section-->
+
+<section id="footer">
+  <div class="footer-con mt-5">
+    <div class="row">
+      <div class="col-2">
+        <img class="footer-image" src="images/sith-logo.png" alt="my logo">
+      </div>
+      <div class="col-10">
+        <!-- Included Some Text -->
+        <h2>Get In Touch With Us For More Assisstance</h2>
+        <form>
+          <div class="form-group row">
+            <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPhone" class="col-sm-2 col-form-label">Phone</label>
+            <div class="col-sm-10">
+              <input type="tel" class="form-control" id="inputPhone" placeholder="Enter your phone number">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-10 offset-sm-2">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <p>© Copyright TechAssassin</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
